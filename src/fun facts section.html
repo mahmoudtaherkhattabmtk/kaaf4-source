@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Document</title>
+    <style>
+        /* #Fun Facts
+================================================================================= */
+        .fun-facts {
+            background: #212121;
+            padding: 50px;
+            margin-top: 20px;
+            color: #fff;
+        }
+
+        .fun-facts i {
+            color: #fac600;
+            margin-bottom: 15px;
+            margin-right: 0;
+        }
+
+        .fun-facts i:hover {
+            color: #fac600;
+        }
+
+        .fun-facts p {
+            font-weight: bold;
+        }
+
+        p.number {
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- partial:index.partial.html -->
+    <section class="fun-facts text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <i class="fa fa-folder fa-5x"></i>
+                    <p class="number">20+</p>
+                    <p>Projects</p>
+                </div>
+                <div class="col-md-3">
+                    <i class="fa fa-handshake-o fa-5x"></i>
+                    <p class="number">50+</p>
+                    <p>Business Owners Helped</p>
+                </div>
+                <div class="col-md-3">
+                    <i class="fa fa-code fa-5x"></i>
+                    <p class="number">200,000,000+</p>
+                    <p>Lines Of Code</p>
+                </div>
+                <div class="col-md-3">
+                    <i class="fa fa-coffee fa-5x"></i>
+                    <p class="number">200+</p>
+                    <p>Cups Of Coffee</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- partial -->
+    <script>
+        //         document.addEventListener("DOMContentLoaded", function() {
+        //             function countUp(targetElement, start, end, duration) {
+        //                 let current = start;
+        //                 const increment = (end - start) / duration;
+        //                 const timer = setInterval(function () {
+        //                     current += increment;
+        //                     targetElement.textContent = Math.floor(current);
+        //                     if (current >= end) {
+        //                         clearInterval(timer);
+        //                         targetElement.textContent = end;
+        //                     }
+        //                 }, 1000);
+        //             }
+
+        //     const numbers = document.querySelectorAll('.fun-facts .number');
+        //         numbers.forEach(function(number) {
+        //         const endValue = parseInt(number.textContent.replace(/\D/g, ''));
+        //         countUp(number, 0, endValue, 3); // Change duration (3 seconds) as needed
+        //     });
+        // });
+
+
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            function easeOut(t, b, c, d) {
+                return c * ((t = t / d - 1) * t * t + 1) + b;
+            }
+
+            function countUp(targetElement, end, duration) {
+                let start = 0;
+                let startTime = null;
+
+                function step(timestamp) {
+                    if (!startTime) startTime = timestamp;
+                    const progress = timestamp - startTime;
+                    const currentValue = easeOut(progress, start, end - start, duration);
+                    targetElement.textContent = Math.floor(currentValue);
+                    if (progress < duration) {
+                        window.requestAnimationFrame(step);
+                    } else {
+                        targetElement.textContent = end;
+                    }
+                }
+
+                window.requestAnimationFrame(step);
+            }
+
+            const numbers = document.querySelectorAll('.fun-facts .number');
+            numbers.forEach(function (number) {
+                const endValue = parseInt(number.textContent.replace(/\D/g, ''));
+                countUp(number, endValue, 3000); // 3000 milliseconds (3 seconds) duration
+            });
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/kaaf4/static/css/main.ba143691.css",
+    "main.js": "/kaaf4/static/js/main.e1303215.js",
+    "static/js/787.0b1a2de6.chunk.js": "/kaaf4/static/js/787.0b1a2de6.chunk.js",
+    "static/media/Birthday-133.jpg": "/kaaf4/static/media/Birthday-133.1ec80cc169a7509cea65.jpg",
+    "static/media/12.jpg": "/kaaf4/static/media/12.f50fd35300b0497eec59.jpg",
+    "static/media/5.jpg": "/kaaf4/static/media/5.fe89fe5c660e30bc9700.jpg",
+    "static/media/2.jpg": "/kaaf4/static/media/2.927182b1cb805c466113.jpg",
+    "static/media/11.jpg": "/kaaf4/static/media/11.6d5d3c58c62ce24ac351.jpg",
+    "static/media/6.jpg": "/kaaf4/static/media/6.90b5b93d3b077c056cf2.jpg",
+    "static/media/7.jpg": "/kaaf4/static/media/7.451dcd79e6ed55264874.jpg",
+    "static/media/9.jpg": "/kaaf4/static/media/9.ef3722eb66164009be42.jpg",
+    "static/media/4.jpg": "/kaaf4/static/media/4.082f1697cd035b26d734.jpg",
+    "static/media/1.jpg": "/kaaf4/static/media/1.df2cf1a19cd5272b72d3.jpg",
+    "static/media/3.jpg": "/kaaf4/static/media/3.7a123f63785c69af7533.jpg",
+    "static/media/8.jpg": "/kaaf4/static/media/8.a245cdaec1736e1dd391.jpg",
+    "static/media/10.jpg": "/kaaf4/static/media/10.4b6f2ef17019537c3214.jpg",
+    "index.html": "/kaaf4/index.html",
+    "main.ba143691.css.map": "/kaaf4/static/css/main.ba143691.css.map",
+    "main.e1303215.js.map": "/kaaf4/static/js/main.e1303215.js.map",
+    "787.0b1a2de6.chunk.js.map": "/kaaf4/static/js/787.0b1a2de6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ba143691.css",
+    "static/js/main.e1303215.js"
+  ]
+}

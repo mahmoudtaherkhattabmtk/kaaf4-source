@@ -1,0 +1,33 @@
+.arContainer .arSideNav {
+  width: 20%;
+  min-height: 100vh;
+  float: right;
+}
+
+.arContainer .arSideNav .container {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.arContainer .arSideNav ul {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.arContainer .arSideNav ul li {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.arContainer .home-section .icons li,
+.arSideNav {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}

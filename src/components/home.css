@@ -1,0 +1,172 @@
+/*home sections*/
+.animation {
+  height: 50px;
+  overflow: hidden;
+}
+
+.animation>div>div {
+  height: 2.81rem;
+  margin-bottom: 2.81rem;
+  display: inline-block;
+}
+
+.animation div:first-child {
+  animation: text-animation 8s infinite;
+}
+
+@keyframes text-animation {
+  0% {
+    margin-top: 0;
+  }
+
+  10% {
+    margin-top: 0;
+  }
+
+  20% {
+    margin-top: -5.62rem;
+  }
+
+  30% {
+    margin-top: -5.62rem;
+  }
+
+  40% {
+    margin-top: -11.24rem;
+  }
+
+  60% {
+    margin-top: -11.24rem;
+  }
+
+  70% {
+    margin-top: -5.62rem;
+  }
+
+  80% {
+    margin-top: -5.62rem;
+  }
+
+  90% {
+    margin-top: 0;
+  }
+
+  100% {
+    margin-top: 0;
+  }
+}
+
+/* .sections {
+  width: 70%;
+  position: relative;
+  float: left;
+  left: 18%;
+  padding: 0 5%;
+} */
+.home-section {
+  width: 75%;
+  float: right;
+}
+
+.sections .left-side {
+  float: left;
+  /* width: 50%; */
+}
+
+.sections .bio ul li button {
+  padding: 17px 50px;
+  margin-right: 10px;
+  color: #fff;
+  background-color: #0e1824;
+  border: 1px solid #fff;
+}
+
+.sections .bio ul {
+  margin-bottom: 30px;
+}
+
+.sections .home-section .icons {
+  position: relative;
+  top: 35px;
+}
+
+.sections .bio ul li:last-of-type {
+  padding: 15px 30px;
+  border-bottom: 1px solid #0e1824;
+}
+
+.sections .bio ul li:last-of-type:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: unset;
+  border: unset;
+  color: #0e1824;
+  cursor: pointer;
+}
+
+.sections .bio ul li:first-of-type:hover button {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: unset;
+  color: #0e1824;
+  cursor: pointer;
+}
+
+.sections .icons li {
+  padding: 10px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.sections .icons li:hover {
+  box-shadow: unset;
+  color: #FFF;
+  background-color: #0e1824;
+  cursor: pointer;
+}
+
+.sections .bio p {
+  margin-bottom: 35px;
+}
+
+.sections .right-side {
+  float: left;
+  position: relative;
+  top: 30px;
+  left: 1%;
+  border-left: 1px solid rgb(189, 189, 189);
+}
+
+.sections .right-side img {
+  position: relative;
+  left: 30px;
+}
+
+/*Media query*/
+@media (max-width: 992px) {
+  .sections .left-side {
+    width: 100%;
+  }
+
+  .sections .right-side {
+    top: 80px;
+  }
+
+  .sections .bio ul li button,
+  .sections .bio ul li:last-of-type {
+    padding: 15px;
+  }
+
+  .sections .left-side {
+    width: 100%;
+  }
+
+  .sections .bio ul li button,
+  .sections .bio ul li:last-of-type {
+    padding: 15px;
+  }
+
+  .animation {
+    height: 50px;
+    overflow: hidden;
+  }
+
+}
